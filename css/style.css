@@ -1,0 +1,165 @@
+h1 {
+    font-family: 'Montserrat', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+h3 {
+    font-family: 'Montserrat', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+h4 {
+    font-family: 'Montserrat', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+p {
+    font-family: 'Montserrat', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.navigation {
+    min-height: 125px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.inline-block {
+    padding: 15px;
+    display: inline-block;
+
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+nav {
+    width: 73;
+    padding: 1%;
+    float: right; 
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.logo {
+    float: left;
+}
+
+.hero {
+    height: auto;
+    max-width: 1400px ;
+    padding: 25px;
+    display: inline-flex;
+}
+
+.pic {
+    padding: 25px;
+}
+
+.content {
+    min-width: 500px;
+    padding: 25px;
+    display: inline;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #373738;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2%;
+}
+
+.mySkills{
+    height: auto;
+    padding: 25px;
+}
+
+.flexContainer {
+    display: flex;
+    width: 100%-40px;
+    max-width: 1400px ;
+    margin: 40px;
+    flex-direction: row;
+}
+
+.skill {
+    padding: 20px;
+    margin: 5px;
+}
+
+.skill img {
+    width: auto;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+.myWork {
+    padding-left: 25px;
+}
+
+.workGrid {
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "nonProfitCaseStudyPic nonProfitCaseStudyText"
+                        "fredCaseStudyPic fredCaseStudyText";
+}
+
+.workGrid img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#nonProfitCaseStudyPic {
+    grid-area: nonProfitCaseStudyPic; 
+}
+
+#nonProfitCaseStudyText {
+    grid-area: nonProfitCaseStudyText; 
+}
+
+#fredCaseStudyPic {
+    grid-area: fredCaseStudyPic; 
+}
+
+#fredCaseStudyText {
+    grid-area: fredCaseStudyText; 
+}
+
+.caseStudy{
+    display: grid;
+    align-content:center;
+    margin: 10px;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .mySkills {
+        padding: 5px;
+        grid-template-rows: 100% 100% 100% 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "nonProfitCaseStudyPic"
+                             "nonProfitCaseStudyText"
+                             "fredCaseStudyPic"
+                             "fredCaseStudyText";
+    }
+
+}
